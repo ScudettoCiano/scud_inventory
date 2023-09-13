@@ -1,24 +1,8 @@
-<!-- <h1>Shopping List Page</h1> -->
 
-
-<!-- ... -->
-<!-- <h5>Name: </h5>
-<p>{{ name  }}<p>
-<h5>Class: </h5>
-<p>{{ class }}<p>
-
-<h5>Amount : </h5>
-<p>{{ amount  }}<p> -->
-
-
-    <!DOCTYPE html>
+   <!DOCTYPE html>
     <html>
     
-    <!-- 
-      TODO
-    1. By changing only the display property of the CSS make all 3 squares line up horizontally like in goal1 image.
-    2. Change only the display property to make all 3 squares line up vertically like in goal2 image. 
-    -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
@@ -47,7 +31,7 @@
         .container {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start; /* Agar tombol selalu sejajar */
+            align-items: flex-start; 
             background-color: #ffffff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
@@ -57,11 +41,11 @@
 
         .item-card {
             text-align: center;
-            flex: 0 0 30%; /* Untuk mengatur lebar masing-masing card */
-            margin: 0 10px; /* Untuk memberi jarak antara card */
+            flex: 0 0 30%; 
+            margin: 0 10px;
             display: flex;
             flex-direction: column;
-            height: 100%; /* Agar tinggi semua card sama */
+            height: 100%; 
         }
 
         .item-card img {
@@ -97,7 +81,7 @@
             height: 100px;
             background-color: #cccccc;
             border-radius: 50%;
-            margin-right: 10px; /* Memberi jarak antara placeholder */
+            margin-right: 10px; 
             overflow: hidden;
         }
 
@@ -112,8 +96,7 @@
             font-weight: bold;
             margin-top: 10px;
             text-align: right; 
-            flex-grow: 1; /* Mengisi ruang kosong di sebelah kanan */
-            /* text-align: right; */
+            flex-grow: 1; 
             font-size: 25px;
         }
       </style>
@@ -150,20 +133,17 @@
     
         <div class="placeholders">
             <div class="placeholder">
-                <!-- Anda dapat menambahkan gambar di sini -->
                 <img src="templates/chara1.jpg" alt="Gambar Item 3">
                 
             </div>
             <div class="placeholder">
-                <!-- Anda dapat menambahkan gambar di sini -->
+    
                 <img src="templates/chara2.jpg" alt="Gambar Item 3">
             </div>
             <div class="placeholder">
-                <!-- Anda dapat menambahkan gambar di sini -->
                 <img src="templates/chara3.jpg" alt="Gambar Item 3">
             </div>
             <div class="placeholder">
-                <!-- Anda dapat menambahkan gambar di sini -->
                 <img src="templates/chara4.jpg" alt="Gambar Item 3">
             </div>
             <div class="team">{{ name }}Team</div>
