@@ -1,12 +1,173 @@
-<h1>Shopping List Page</h1>
+<!-- <h1>Shopping List Page</h1> -->
 
 
-...
-<h5>Name: </h5>
+<!-- ... -->
+<!-- <h5>Name: </h5>
 <p>{{ name  }}<p>
 <h5>Class: </h5>
 <p>{{ class }}<p>
 
 <h5>Amount : </h5>
-<p>{{ amount  }}<p>
+<p>{{ amount  }}<p> -->
+
+
+    <!DOCTYPE html>
+    <html>
+    
+    <!-- 
+      TODO
+    1. By changing only the display property of the CSS make all 3 squares line up horizontally like in goal1 image.
+    2. Change only the display property to make all 3 squares line up vertically like in goal2 image. 
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <head>
+      <title>CSS Display Property Example</title>
+      <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            font-family: 'Fira Sans Condensed', sans-serif; font-family: 'Libre Baskerville', serif;
+            font-size: 50px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Agar tombol selalu sejajar */
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .item-card {
+            text-align: center;
+            flex: 0 0 30%; /* Untuk mengatur lebar masing-masing card */
+            margin: 0 10px; /* Untuk memberi jarak antara card */
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Agar tinggi semua card sama */
+        }
+
+        .item-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .item-card .card-description {
+            flex-grow: 1;
+            text-align: justify; 
+        }
+
+        .item-card .card-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .placeholders {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            background-color: #ffffff;
+            padding: 20px;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #cccccc;
+            border-radius: 50%;
+            margin-right: 10px; /* Memberi jarak antara placeholder */
+            overflow: hidden;
+        }
+
+        .placeholder img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+        .team {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: right; 
+            flex-grow: 1; /* Mengisi ruang kosong di sebelah kanan */
+            /* text-align: right; */
+            font-size: 25px;
+        }
+      </style>
+    </head>
+    
+    
+    <body>
+        <div class="title">Herta's Store</div>
+        <div style="font-size: 25px;">Your Cosmic Fragments: {{ amount }}</div>
+    
+        <div class="container">
+            <div class="item-card">
+                <h2>Black Hole Trap</h2>
+                <img src="templates/curio2.jpg" alt="Gambar Item 1">
+                <p class="card-description">{{description3}}</p>
+                <button class="card-button">Confirm</button>
+            </div>
+    
+            <div class="item-card">
+                <h2>Tonic of Chaos</h2>
+                <img src="templates/curio1.jpg" alt="Gambar Item 2">
+                <p class="card-description">{{description2}}</p>
+                <button class="card-button">Confirm</button>
+            </div>
+    
+            <div class="item-card">
+                <h2>Black Hole Trap</h2>
+                <img src="templates/curio3.jpg" alt="Gambar Item 3">
+                <p class="card-description">{{description1}}.</p>
+                <button class="card-button">Confirm</button>
+            </div>
+            
+        </div>
+    
+        <div class="placeholders">
+            <div class="placeholder">
+                <!-- Anda dapat menambahkan gambar di sini -->
+                <img src="templates/chara1.jpg" alt="Gambar Item 3">
+                
+            </div>
+            <div class="placeholder">
+                <!-- Anda dapat menambahkan gambar di sini -->
+                <img src="templates/chara2.jpg" alt="Gambar Item 3">
+            </div>
+            <div class="placeholder">
+                <!-- Anda dapat menambahkan gambar di sini -->
+                <img src="templates/chara3.jpg" alt="Gambar Item 3">
+            </div>
+            <div class="placeholder">
+                <!-- Anda dapat menambahkan gambar di sini -->
+                <img src="templates/chara4.jpg" alt="Gambar Item 3">
+            </div>
+            <div class="team">{{ name }}Team</div>
+        </div>
+    </body>
+    </html>
     
