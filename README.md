@@ -1,4 +1,5 @@
 # Tugas 2 BPB 
+link : https://scudinventory.adaptable.app/main/
 ## Implementasi checklist
 
 ## Bagan Serta Keterkaitan antar Berkas
