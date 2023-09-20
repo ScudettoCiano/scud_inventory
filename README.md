@@ -1,4 +1,4 @@
-#TUGAS 3
+# TUGAS 3
 
 ## Perbedaan antara Form POST dan Form GET dalam Django
 Form POST dan Form GET merupakan cara untuk mengirim data klien/pengguna ke server pada Django
@@ -103,7 +103,7 @@ Menambahkan path pada urlpatterns di urls.py.
 - Menguji Fungsi-fungsi:
 Mencoba kelima fungsi tersebut pada Postman dengan membuat permintaan baru dan memasukkan URL localhost + path fungsi yang ingin diuji.
 
-##Gambar
+## Gambar
 ![XML_id](images/XML_id.png)
 ![XML](images/XML.png)
 ![JSON](images/JSON.png)
