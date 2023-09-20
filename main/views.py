@@ -16,8 +16,8 @@ def show_main(request):
     products = Product.objects.all()
 
     context = {
-        'name': 'test', # Nama kamu
-        'class': 'PBP ak', # Kelas PBP kamu
+        'name': 'SCUD', # Nama kamu
+        'class': 'PBP E', # Kelas PBP kamu
         'products': products,
         'amount' : 12,
         'desctiption1': 'You will obtain 10 Cosmic Fragments for each ally whose HP is at max when winning a battle.',

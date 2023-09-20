@@ -1,64 +1,4 @@
-# TUGAS 3
-
-## Apa perbedaan antara form POST dan form GET dalam Django?
-Dalam Django, form POST dan form GET mengacu pada dua metode HTTP yang berbeda yang digunakan dalam pengiriman data dari form.
-
-Metode GET digunakan untuk meminta data dari server. Dalam konteks form, data yang dihasilkan dari form akan ditambahkan ke URL dalam bentuk query string. Namun, karena data tersebut ditampilkan di URL, metode GET sebaiknya tidak digunakan untuk mengirim data sensitif seperti password. Selain itu, karena keterbatasan panjang URL, metode GET mungkin tidak cocok untuk mengirim data yang besar 
-
-Sebaliknya, metode POST digunakan untuk mengirim data ke server. Data yang dihasilkan dari form dikirim sebagai bagian dari body request, bukan sebagai bagian dari URL. Oleh karena itu, metode POST lebih aman dan dapat digunakan untuk mengirim data sensitif serta data yang besar. Dalam Django, data yang dikirim melalui metode POST biasanya diakses melalui atribut request.POST 
-
-## Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
-XML, JSON, dan HTML adalah tiga format data yang berbeda yang sering digunakan dalam pengiriman data di web.
-* HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur dan tampilan halaman web. HTML bukan format yang ideal untuk pengiriman data antara aplikasi karena strukturnya yang kompleks dan berorientasi tampilan 
-* XML (eXtensible Markup Language) adalah bahasa markup yang digunakan untuk menyimpan dan mengangkut data. XML mendukung struktur data yang kompleks dan dapat mendefinisikan skema sendiri. Namun, XML cenderung lebih rumit dibandingkan dengan JSON 
-* JSON (JavaScript Object Notation) adalah format yang digunakan untuk menyimpan dan mengangkut data. JSON lebih ringan dan lebih mudah dibaca dan ditulis oleh manusia dibandingkan dengan XML. JSON juga mudah untuk di-parse dan di-generate oleh mesin. Oleh karena itu, JSON sering menjadi pilihan yang disukai untuk pertukaran data antara aplikasi web.
-
-## Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
-JSON sering digunakan dalam pertukaran data antara aplikasi web modern karena beberapa alasan:
-
-* JSON memiliki sintaks yang lebih sederhana dan lebih ringan dibandingkan dengan format lain seperti XML. Hal ini membuatnya lebih efisien.
-* JSON lebih mudah dibaca sehingga sangat membantu saat debugging
-* Hampir semua bahasa pemrograman modern memiliki dukungan bawaan untuk parsing dan menghasilkan JSON.
-* SON dapat di-parse dengan mudah oleh JavaScript, bahasa yang digunakan di mayoritas webapp.
-
-## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
-Cara Saya Mengimplementasikan Checklist
-1. Membuat forms.py dengan fields dari forms berasal dari products yang dideklarasikan pada class Product models.py
-2. Jika ingin menambahkan indikator kita bisa migrate dulu
-3. Buat Fungsi baru di views bernama create_product untuk merender tampilan dari forms pada sebuah template html
-4. Buat file html sebagai template dari forms yang dirender oleh fungsi create_product
-5. Buat sebuah button pada main html yang akan redirect kepada page yang berisikan forms untuk menambahkan product
-6. Setelah membuat fungsi untuk melihat dalam bentuk HTML kita akan membuat 4 fungsi lain yaitu XML,XMLByID, JSON, JSONByID
-7. Untuk membuat fungsi untuk melihat dalam XML dan JSON kita harus membuat fungsi dengan serializers untuk mentranslate data pada database kita kepada format XML atau JSON
-8. Untuk membuat fungsi untuk melihat dalam XML dan JSON per ID kita harus membuat fungsi yang sama seperti pada saat membuat fungsi untuk melihat XML dan JSON seperti langkah 7, tetapi kita harus menerapkan filter terhadap pk(primary key) dari data yang disimpan dari database untuk ID dari data yang kita ingin akses
-9. Setelah membuat 5 fungsi tersebut kita dapat melakukan routing dengan menambahkan url dari masing masing fungsi yang ingin kita terapkan pada urls py
-10. Setelah melakukan routing kita dapat mengecek masing2 fungsi tersebut pada localhost kita
-
-## Mengakses kelima URL di poin 2 menggunakan Postman, membuat screenshot dari hasil akses URL pada Postman, dan menambahkannya ke dalam README.md
-### HASIL AKSES URL PADA POSTMAN
-#### Postman HTML
-![Hasil Screenshot POSTMAN HTML](PostmanHTML.png)
-
-#### Postman XML
-![Hasil Screenshot POSTMAN XML](PostmanXML.png)
-
-#### Postman XML By ID
-![Hasil Screenshot Postman XML By ID](PostmanXMLByID.png)
-
-#### Postman JSON
-![Hasil Screenshot Postman JSON](PostmanJSON.png)
-
-#### Postman JSON By ID 
-![Hasil Screenshot Postman JSON By ID](PostmanJSONByID.png)
-
-## Referensi Tugas 3
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction
-
-
-
-
-
-Tentu, saya akan membantu Anda menjawab pertanyaan-pertanyaan tersebut dalam README.md di root folder Anda:
+#TUGAS 3
 
 ## Perbedaan antara Form POST dan Form GET dalam Django
 Form POST dan Form GET merupakan cara untuk mengirim data klien/pengguna ke server pada Django
@@ -162,6 +102,17 @@ Menambahkan path pada urlpatterns di urls.py.
 
 - Menguji Fungsi-fungsi:
 Mencoba kelima fungsi tersebut pada Postman dengan membuat permintaan baru dan memasukkan URL localhost + path fungsi yang ingin diuji.
+
+##Gambar
+![XML_id](images/XML_id.png)
+![XML](images/XML.png)
+![JSON](images/JSON.png)
+![JSON_id](images/JSON_id.png)
+![HTML](images/HTML.png)
+
+
+
+
 
 
 
