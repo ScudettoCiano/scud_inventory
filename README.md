@@ -63,7 +63,7 @@ JSON sering digunakan dalam pertukaran data antara aplikasi web modern karena be
 Sebagai hasilnya, JSON telah menjadi salah satu format standar untuk pertukaran data antar aplikasi web modern, menggantikan format lain seperti XML dalam banyak kasus.
 
 
-Implementasi Checklist Step-by-Step
+## Implementasi Checklist Step-by-Step
 
 - Membuat Form POST dan Form GET dalam Django:
 
