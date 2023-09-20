@@ -68,9 +68,11 @@ Sebagai hasilnya, JSON telah menjadi salah satu format standar untuk pertukaran 
 - Membuat Form POST dan Form GET dalam Django:
 
 Pertama, buat berkas forms.py dalam direktori main dan isinya dengan atribut yang akan diminta untuk Item.
-Implementasi Form POST:
+
+- Implementasi Form POST:
 
 Selanjutnya, impor modul HttpResponseRedirect, ItemForm, dan reverse. Buat fungsi create_item dalam tampilan (view) dengan menggunakan ItemForm untuk menangani pengiriman data melalui metode POST.
+
 - Mengubah Fungsi show_main:
 
 Di dalam fungsi show_main, tambahkan 'items': items pada bagian context agar daftar Item dapat dikirim ke template.
@@ -90,10 +92,10 @@ Edit berkas main.html agar nantinya data dari Item dapat ditampilkan pada halama
 - Implementasi Format Data Lainnya:
 Melakukan impor HttpResponse dan serializers pada views.py.
 Buat fungsi show_xml, show_json, show_xml_by_id, dan show_json_by_id dalam views.py.
-Mengisi fungsi show_xml dengan data dari Item.objects.all() dan mengembalikan HttpResponse dengan content_type="application/xml".
-Mengisi fungsi show_json dengan data dari Item.objects.all() dan mengembalikan HttpResponse dengan content_type="application/json".
-Mengisi fungsi show_xml_by_id dengan data dari Item.objects.filter(pk=id) dan mengembalikan HttpResponse dengan content_type="application/xml".
-Mengisi fungsi show_json_by_id dengan data dari Item.objects.filter(pk=id) dan mengembalikan HttpResponse dengan content_type="application/json".
+Mengisi fungsi show_xml 
+Mengisi fungsi show_json 
+Mengisi fungsi show_xml_by_id .
+Mengisi fungsi show_json_by_id 
 
 - Routing untuk Format Data:
 
