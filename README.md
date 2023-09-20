@@ -90,11 +90,17 @@ Buat berkas create_item.html dalam direktori main/templates dan isi dengan formu
 Edit berkas main.html agar nantinya data dari Item dapat ditampilkan pada halaman main.
 
 - Implementasi Format Data Lainnya:
+
 Melakukan impor HttpResponse dan serializers pada views.py.
+
 Buat fungsi show_xml, show_json, show_xml_by_id, dan show_json_by_id dalam views.py.
+
 Mengisi fungsi show_xml 
+
 Mengisi fungsi show_json 
-Mengisi fungsi show_xml_by_id .
+
+Mengisi fungsi show_xml_by_id 
+
 Mengisi fungsi show_json_by_id 
 
 - Routing untuk Format Data:
