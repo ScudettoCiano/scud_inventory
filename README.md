@@ -1,3 +1,60 @@
+# TUGAS 4
+
+## Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
+Django UserCreationForm adalah formulir bawaan Django yang memudahkan pembuatan fitur registrasi untuk aplikasi web. Formulir ini dirancang untuk terintegrasi dengan Django authentication system.
+
+Kelebihan:
+- Mempercepat proses pembuatan fitur registrasi.
+- Terintegrasi dengan baik dengan sistem otentikasi Django.
+- Memiliki validasi bawaan untuk password untuk memastikan keamanannya.
+
+Kekurangan:
+- Kurang fleksibel untuk kostumisasi yang kompleks.
+- Tampilan bawaannya terbatas dan membutuhkan penyesuaian lebih lanjut untuk desain tertentu.
+
+## Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
+Perbedaan terlihat pada definisi berikut.
+Autentikasi: Proses verifikasi identitas pengguna, biasanya melalui kombinasi username dan password.
+Otorisasi: Proses memberikan atau menolak izin kepada pengguna yang telah terotentikasi untuk mengakses sumber daya atau fitur tertentu.
+Keduanya penting karena memastikan bahwa hanya pengguna yang memiliki hak akses yang dapat mengakses dan memodifikasi data atau fitur tertentu, meningkatkan keamanan dan privasi dalam aplikasi.
+
+## Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
+Cookies adalah potongan data kecil yang disimpan di browser pengguna. Saat pengguna mengunjungi sebuah website, server dapat mengirim cookie ke browser pengguna dan pada kunjungan selanjutnya, browser akan mengirim kembali cookie tersebut ke server. Django menggunakan cookies untuk mengidentifikasi sesi pengguna, memastikan bahwa data pengguna tetap aman dan konsisten selama mereka berinteraksi dengan aplikasi.
+
+## Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
+Meskipun cookies aman untuk sebagian besar kasus penggunaan, ada beberapa risiko yang harus diperhatikan:
+
+- Cross-Site Scripting (XSS): Serangan ini dapat memungkinkan penyerang untuk mencuri cookies pengguna.
+- Third-Party Cookies: Cookies dari domain pihak ketiga yang bisa digunakan untuk melacak aktivitas pengguna.
+- Over-reliance on Cookies: Menyimpan informasi sensitif dalam cookies tanpa enkripsi dapat berisiko.
+Untuk mengatasi risiko tersebut, selalu gunakan HTTPS dan pastikan aplikasi Anda terlindungi dari serangan XSS.
+
+## Implementasi Step-by-Step:
+1. Pembuatan Fungsi Register dan Login:
+- Buat fungsi register dalam views.py.
+- Tambahkan UserCreationForm untuk form registrasi.
+- Buat fungsi login_user dan gunakan authenticate dan login untuk proses login.
+
+2. Pembuatan Halaman Register dan Login:
+- Buat register.html dan login.html dalam folder templates.
+
+3. Routing:
+- Tambahkan rute untuk halaman register, login, dan logout dalam urls.py.
+
+4. Penggunaan Cookies:
+- Set cookie last_login saat pengguna berhasil login.
+- Akses cookie saat menampilkan halaman utama untuk menampilkan informasi terakhir login.
+- Hapus cookie saat logout.
+
+5. Integrasi dengan Model:
+- Tambahkan relasi ke model User dalam model Item.
+- Modifikasi fungsi yang berhubungan dengan item untuk mempertimbangkan pengguna yang sedang login.
+
+6. Finalisasi:
+- Lakukan run server untuk mengakomodasi perubahan model.
+- Uji coba fitur-fitur yang telah dibuat.
+- Push ke repositori GitHub.
+
 # TUGAS 3
 
 ## Perbedaan antara Form POST dan Form GET dalam Django
@@ -9,8 +66,8 @@ Form POST dan Form GET merupakan cara untuk mengirim data klien/pengguna ke serv
    - Data tidak terlihat dalam URL, sehingga lebih aman untuk mengirim data sensitif seperti kata sandi.
    - Dapat digunakan untuk mengirim data yang lebih besar daripada Form GET.
    - Biasanya digunakan untuk operasi yang merubah data, seperti menambahkan, mengedit, atau menghapus entitas dalam basis data.
--Pada Django data yang dikirim melalui metode POST biasanya diakses melalui atribut request.POST 
-- contoh URL POST :  https://www.contohpost.com/submit
+   - Pada Django data yang dikirim melalui metode POST biasanya diakses melalui atribut request.POST 
+   - contoh URL POST :  https://www.contohpost.com/submit
 
 
 
