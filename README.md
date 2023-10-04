@@ -1,3 +1,81 @@
+# Tugas 5
+
+## Manfaat Element Selector
+Element selector digunakan untuk menerapkan gaya tampilan kepada suatu element HTML yang sama. Manfaat utama dari element selector adalah:
+
+- Menerapkan gaya tampilan secara konsisten pada semua elemen dengan nama yang sama.
+- Memudahkan pemeliharaan dan perubahan gaya tampilan global pada elemen-elemen dasar di seluruh halaman web.
+- Mengikuti aturan semantik, menjaga struktur dan semantik HTML tetap utuh.
+
+Contoh : 
+1. Selector Universal (*)
+
+- Selector ini memilih semua elemen di halaman web.
+- Digunakan ketika ingin menerapkan gaya tampilan global pada semua elemen.
+
+2. Selector Tag (Contoh: p, h1, div)
+
+- Selector ini memilih semua elemen dengan nama tag yang sesuai.
+- Digunakan ketika ingin menerapkan gaya tampilan pada semua elemen dengan tag yang sama.
+
+3. Selector Class (Contoh: .btn, .header)
+
+- Selector ini memilih semua elemen dengan atribut class yang sesuai.
+- Digunakan ketika ingin menerapkan gaya tampilan pada elemen-elemen yang memiliki class tertentu.
+
+4. Selector ID (Contoh: #container, #header)
+
+- Selector ini memilih elemen dengan atribut id yang sesuai.
+- Digunakan ketika ingin menerapkan gaya tampilan pada elemen dengan ID tertentu.
+
+## HTML5 Tag
+Beberapa tag HTML5 yang umum digunakan:
+
+- `<header>`: Digunakan untuk mengatur bagian atas aplikasi web seperti judul dan logo.
+- `<nav>`: Digunakan untuk mengelompokkan elemen-elemen yang terkait dengan navigasi seperti menu.
+- `<main>`: Berisi dari konten utama suatu halaman web.
+- `<footer>`: Digunakan untuk mengatur bagian bawah dari aplikasi web, sering digunakan untuk menampilkan hak cipta.
+- `<section>`: Digunakan untuk mengelompokkan elemen-elemen dengan konten terkait.
+
+Terdapat banyak tag lain juga selain diatas, misalnya 
+HTML5 Tag adalah tag HTML yang diperkenalkan atau dimodifikasi pada versi HTML5. Beberapa contoh HTML5 Tag adalah:
+
+- `<article>`: Menentukan konten yang mandiri, seperti artikel, blog post, komentar, dan sebagainya.
+- `<aside>`: Menentukan konten yang terkait dengan konten utama, tetapi kurang penting, seperti sidebar, kotak iklan, dan sebagainya.
+- `<audio>`: Menentukan konten suara yang tertanam, seperti musik, podcast, rekaman, dan sebagainya.
+- `<canvas>`: Menentukan area untuk menggambar grafik, pada umumnya menggunakan JavaScript.
+- `<datalist>`: Menentukan daftar opsi yang telah ditentukan untuk kontrol input, seperti input teks, input pencarian, dan sebagainya.
+- `<detaild>`: Menentukan detail tambahan yang dapat dilihat atau disembunyikan oleh pengguna, seperti FAQ, petunjuk, dan sebagainya.
+
+dan lainnya
+
+## Perbedaan antara Margin dan Padding
+Perbedaan utama antara margin dan padding adalah:
+
+- Margin mengatur jarak antara elemen dengan elemen lain di sekitarnya, sedangkan padding mengatur jarak antara konten elemen dan batas elemen itu sendiri.
+
+- Ketika ingin mengatur jarak antara elemen-elemen di halaman web ,maka akan menggunakan margin. Sedangkan ketika ingin mengatur jarak antara konten dalam elemen dan batas elemen itu sendiri, maka akan menggunakan padding.
+
+agar lebih jelas berikut lampiran padding dan margin : 
+![XML_id](images/paddingMargin.png)
+
+
+## Perbedaan antara Framework CSS Tailwind dan Bootstrap
+Perbedaan antara Tailwind dan Bootstrap meliputi:
+
+- **Tailwind**: Tailwind adalah framework CSS yang memberikan banyak kelas yang bisa digunakan langsung dalam HTML. Ini memberi Anda kontrol tinggi dalam desain tampilan , tetapi memerlukan penulisan banyak kelas dalam HTML. Tailwind cocok digunakan ketika ingin tingkat kustomisasi tinggi dalam desain tampilan  .
+
+- **Bootstrap**: Bootstrap adalah framework CSS yang memiliki banyak komponen siap pakai dan gaya yang sudah ada. Hal ini cukup menggabungkan komponen-komponen tersebut dalam HTML yang digunakan. Bootstrap cocok digunakan ketika kita ingin membuat tampilan dengan cepat atau dalam proyek-proyek kecil.
+
+Kapan sebaiknya menggunakan Bootstrap atau Tailwind tergantung pada kebutuhan  . Jika ingin membuat tampilan dengan cepat dan tidak memiliki banyak waktu untuk desain, Bootstrap bisa menjadi pilihan. Sementara jika siap untuk menghabiskan waktu untuk mengkustomisasi tampilan sesuai keinginan, Tailwind bisa menjadi pilihan yang baik.
+
+## Implementasi Checklist
+- memberikan link bootstrap dan menambahkan create_product dan delete_product
+- mengecek style yang ada di bootstrap
+- setelah ketemu, menginspek dan mengambil komponen yang saya perlukan (saya mengambil pada section example)
+- mengimplementasikan bootstrap dan css lainnya untuk ke empat file html saya (login,register,main dan edit product)
+- melakukan push github
+
 # TUGAS 4
 
 ## Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?

@@ -5,29 +5,69 @@
 {% endblock meta %}
 
 {% block content %}
+<style>
+    body {
+        background-color: #176B87; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-<div class = "login">
+    .login {
+        background-color: #64CCC5; 
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+    }
 
-    <h1>Login</h1>
+    .login h1 {
+        font-size: 28px; /* Ukuran huruf lebih besar */
+        margin-bottom: 20px;
+    }
+
+    .login .mb-3 {
+        margin-bottom: 15px;
+    }
+
+    .login input.form-control {
+        width: 100%;
+    }
+
+    .login .btn.login_btn {
+        width: 100%;
+        background-color: #007bff; /* Warna biru */
+        color: white;
+        border: none;
+    }
+
+    .login .btn.login_btn:hover {
+        background-color: #0056b3; /* Warna biru yang lebih gelap saat menghover */
+    }
+
+    .login p {
+        font-size: 14px; /* Ukuran teks  */
+        margin-top: 20px;
+    }
+</style>
+
+<div class="login">
+    <h1 class="h3 mb-3 fw-normal">Please Login</h1>
 
     <form method="POST" action="">
         {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" name="username" placeholder="Username" class="form-control" id="username">
+        </div>
 
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" placeholder="Password" class="form-control" id="password">
+        </div>
+
+        <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
     </form>
 
     {% if messages %}
@@ -39,7 +79,5 @@
     {% endif %}     
         
     Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
-
 </div>
-
 {% endblock content %}

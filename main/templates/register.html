@@ -4,31 +4,73 @@
     <title>Register</title>
 {% endblock meta %}
 
-{% block content %}  
+{% block content %}
+<style>
+    body {
+        background-color: #176B87; /* Latar belakang biru */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
 
-<div class = "login">
-    
-    <h1>Register</h1>  
+    .register {
+        background-color: #64CCC5; 
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+    }
 
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
-            </table>  
-        </form>
+    .register h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
-                {% endfor %}  
-        </ul>   
+    .register .mb-3 {
+        margin-bottom: 15px;
+    }
+
+    .register input.form-control {
+        width: 100%;
+    }
+
+    .register .btn.register_btn {
+        width: 100%;
+        background-color: #007bff; 
+        color: white;
+        border: none;
+    }
+
+    .register .btn.register_btn:hover {
+        background-color: #0056b3; 
+    }
+
+    .register p {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+        margin-top: 20px;
+    }
+</style>
+
+<div class="register">
+    <h1 class="h3 mb-3 fw-normal">Register</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.as_p }}
+        </div>
+
+        <button class="btn btn-primary w-100 py-2 register_btn" type="submit">Register</button>
+    </form>
+
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
     {% endif %}
-
-</div>  
-
+</div>
 {% endblock content %}
