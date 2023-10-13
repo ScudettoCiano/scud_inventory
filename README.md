@@ -1,3 +1,32 @@
+# Tugas 6 
+
+## Perbedaan Antara Asynchronous Programming dan Synchronous Programming
+**Synchronous programming** berarti program dieksekusi berurutan, dimana setiap operasi harus menunggu operasi sebelumnya selesai sebelum menjalankan operasi selanjutnya. Sebaliknya, **asynchronous programming** memungkinkan program untuk menjalankan beberapa operasi secara bersamaan tanpa harus menunggu operasi sebelumnya selesai. Dalam asynchronous programming, operasi yang memakan waktu dapat berjalan di latar belakang, sehingga program tidak terblokir.
+
+## Paradigma Event-Driven Programming dalam JavaScript dan AJAX
+Paradigma event-driven programming adalah pendekatan dimana program merespon event atau peristiwa yang terjadi. Dalam JavaScript dan AJAX, ini berarti program merespon tindakan pengguna, seperti klik tombol atau mengirim formulir. Sebuah contoh penerapannya dalam tugas ini adalah ketika pengguna menekan tombol "Tambah Produk", kode akan merespon dengan membuka modal yang memungkinkan pengguna memasukkan data produk.
+
+## Penerapan Asynchronous Programming pada AJAX
+Asynchronous programming pada AJAX memungkinkan aplikasi web untuk berinteraksi dengan server tanpa menghentikan operasi lain di halaman. Ini dicapai dengan menggunakan metode seperti `fetch()` untuk membuat permintaan ke server tanpa memblokir operasi lain, `await()` untuk menunggu kode berjalan selesai, dan `then()` untuk menangani respons dari server setelah permintaan selesai. Dengan ini, halaman web tetap responsif dan tidak terblokir saat data diambil dari server.
+
+## Perbandingan Fetch API dengan jQuery untuk Penerapan AJAX
+**Fetch API** adalah standar JavaScript yang disediakan oleh browser modern. Ia merupakan cara bawaan untuk membuat permintaan HTTP dan mengelola responsnya. Fetch API lebih modern, lebih ringan, modular, dan efisien dalam hal ukuran dan kinerja. Ini sangat cocok untuk pengembangan aplikasi web modern di mana kinerja dan kejelasan kode penting.
+
+**jQuery**, di sisi lain, adalah pustaka JavaScript yang lebih besar dan tua yang menyediakan banyak fitur dan utilitas, termasuk AJAX. Kelebihan jQuery adalah kompatibilitas lintas browser yang baik karena menangani perbedaan implementasi di berbagai browser.
+
+Jika Anda mengembangkan aplikasi web modern, menggunakan Fetch API bisa menjadi pilihan yang lebih baik karena lebih efisien dan ringan.
+
+## Implementasi Checklist
+Berikut adalah langkah-langkah implementasi pada tugas ini:
+1. Membuat method `add_product` dan `delete_product` menggunakan AJAX dan `get_product` dari JSON di `views.py`.
+2. Mendaftarkan method-method tersebut pada `urls.py` pada aplikasi utama.
+3. Mengubah tabel pada `main.html` menjadi sebuah fungsi yang mengimplementasikan method `get_product_json`.
+4. Membuat tombol yang menampilkan modal dan tombol untuk menghapus produk.
+5. Menambahkan modal pada `main.html` yang menampilkan form dan tombol untuk mengirim data form menggunakan method `add_product_ajax`.
+6. Melakukan perintah `collectstatic` untuk mengumpulkan file static dari setiap aplikasi ke dalam folder yang dapat dengan mudah disajikan pada produksi.
+
+Dengan mengikuti langkah-langkah ini, tugas telah diubah menjadi menggunakan AJAX untuk membuat aplikasi web yang lebih responsif dan efisien.
+
 # Tugas 5
 
 ## Manfaat Element Selector
