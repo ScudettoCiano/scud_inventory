@@ -14,7 +14,7 @@ Asynchronous programming pada AJAX memungkinkan aplikasi web untuk berinteraksi 
 
 **jQuery**, di sisi lain, adalah pustaka JavaScript yang lebih besar dan tua yang menyediakan banyak fitur dan utilitas, termasuk AJAX. Kelebihan jQuery adalah kompatibilitas lintas browser yang baik karena menangani perbedaan implementasi di berbagai browser.
 
-Jika Anda mengembangkan aplikasi web modern, menggunakan Fetch API bisa menjadi pilihan yang lebih baik karena lebih efisien dan ringan.
+Jika ingin mengembangkan aplikasi web modern, menggunakan Fetch API bisa menjadi pilihan yang lebih baik karena lebih efisien dan ringan.
 
 ## Implementasi Checklist
 Berikut adalah langkah-langkah implementasi pada tugas ini:
@@ -25,7 +25,6 @@ Berikut adalah langkah-langkah implementasi pada tugas ini:
 5. Menambahkan modal pada `main.html` yang menampilkan form dan tombol untuk mengirim data form menggunakan method `add_product_ajax`.
 6. Melakukan perintah `collectstatic` untuk mengumpulkan file static dari setiap aplikasi ke dalam folder yang dapat dengan mudah disajikan pada produksi.
 
-Dengan mengikuti langkah-langkah ini, tugas telah diubah menjadi menggunakan AJAX untuk membuat aplikasi web yang lebih responsif dan efisien.
 
 # Tugas 5
 
